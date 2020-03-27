@@ -1,0 +1,576 @@
+﻿@model ActivityListModel
+<div class="container">
+    <p><h6>Aşağıda şu an da ki ruh halinize en uygun olan öneriler listelenmektedir!</h6></p>
+</div>
+<!--Movies-->
+<div id="carouselMovies" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <p class="display-4">Filmler </p>
+    </div>
+    <div class="carousel-inner">
+        @{ int i = 0;}
+        @foreach (var item in Model.ActivityAttributes)
+        {
+            if (item.ActivityID == 5&& !string.IsNullOrEmpty(item.Image))
+            {
+                if (i == 0)
+                {
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                                <p>@item.Rate</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    i++;
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    i++;
+                }
+            }
+        }
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carouselMovies" data-slide-to="0" class="active"></li>
+        @for (int a = 1; a < i; a++)
+        {
+            <li data-target="#carouselMovies" data-slide-to="@a"></li>
+        }
+    </ol>
+    <a class="carousel-control-prev" href="#carouselMovies" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselMovies" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--Series-->
+<div id="carouselSeries" class="carousel slide" data-ride="carousel">
+
+    <div class="container">
+        <p class="display-4">Diziler </p>
+    </div>
+    <div class="carousel-inner">
+        @{ int j = 0;}
+        @foreach (var item in Model.ActivityAttributes)
+        {
+            if (item.ActivityID == 3&& !string.IsNullOrEmpty(item.Image))
+            {
+                if (j == 0)
+                {
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                                <p>@item.Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    j++;
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    j++;
+                }
+            }
+        }
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carouselSeries" data-slide-to="0" class="active"></li>
+        @for (int b = 1; b < j; b++)
+        {
+            <li data-target="#carouselSeries" data-slide-to="@b"></li>
+        }
+    </ol>
+    <a class="carousel-control-prev" href="#carouselSeries" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselSeries" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--Musics-->
+<div id="carouselMusics" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <p class="display-4">Musics </p>
+    </div>
+    <div class="carousel-inner">
+        @{ int k = 0;}
+        @foreach (var item in Model.ActivityAttributes)
+        {
+            if (item.ActivityID == 4 && !string.IsNullOrEmpty(item.Image))
+            {
+                if (k == 0)
+                {
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                                <p>@item.Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    k++;
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    j++;
+                }
+            }
+        }
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carouselMusics" data-slide-to="0" class="active"></li>
+        @for (int b = 1; b < j; b++)
+        {
+            <li data-target="#carouselMusics" data-slide-to="@b"></li>
+        }
+    </ol>
+    <a class="carousel-control-prev" href="#carouselMusics" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselMusics" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--e-Book-->
+<div id="carouselebook" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <p class="display-4">e-Books </p>
+    </div>
+    <div class="carousel-inner">
+        @{ int l = 0;}
+        @foreach (var item in Model.ActivityAttributes)
+        {
+            if (item.ActivityID == 7 && !string.IsNullOrEmpty(item.Image))
+            {
+                if (k == 0)
+                {
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                                <p>@item.Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    l++;
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    l++;
+                }
+            }
+        }
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carouselebook" data-slide-to="0" class="active"></li>
+        @for (int b = 1; b < j; b++)
+        {
+            <li data-target="#carouselebook" data-slide-to="@b"></li>
+        }
+    </ol>
+    <a class="carousel-control-prev" href="#carouselebook" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselebook" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--Cinemas-->
+<div id="carouselcinema" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <p class="display-4">Cinemas </p>
+    </div>
+    <div class="carousel-inner">
+        @{ int m = 0;}
+        @foreach (var item in Model.ActivityAttributes)
+        {
+            if (item.ActivityID == 1 && !string.IsNullOrEmpty(item.Image))
+            {
+                if (m == 0)
+                {
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                                <p>@item.Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    m++;
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    m++;
+                }
+            }
+        }
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carouselcinema" data-slide-to="0" class="active"></li>
+        @for (int b = 1; b < j; b++)
+        {
+            <li data-target="#carouselcinema" data-slide-to="@b"></li>
+        }
+    </ol>
+    <a class="carousel-control-prev" href="#carouselcinema" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselcinema" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--Bike Roads-->
+<div id="carouselbike" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <p class="display-4">Bike Roads </p>
+    </div>
+    <div class="carousel-inner">
+        @{ int n = 0;}
+        @foreach (var item in Model.ActivityAttributes)
+        {
+            if (item.ActivityID == 2 && !string.IsNullOrEmpty(item.Image))
+            {
+                if (n == 0)
+                {
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                                <p>@item.Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    n++;
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    n++;
+                }
+            }
+        }
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carouselbike" data-slide-to="0" class="active"></li>
+        @for (int b = 1; b < j; b++)
+        {
+            <li data-target="#carouselbike" data-slide-to="@b"></li>
+        }
+    </ol>
+    <a class="carousel-control-prev" href="#carouselbike" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselbike" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--documentary-->
+<div id="carouseldoc" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <p class="display-4">Documentaries </p>
+    </div>
+    <div class="carousel-inner">
+        @{ int o = 0;}
+        @foreach (var item in Model.ActivityAttributes)
+        {
+            if (item.ActivityID == 6 && !string.IsNullOrEmpty(item.Image))
+            {
+                if (o == 0)
+                {
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                                <p>@item.Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    o++;
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    o++;
+                }
+            }
+        }
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carouseldoc" data-slide-to="0" class="active"></li>
+        @for (int b = 1; b < j; b++)
+        {
+            <li data-target="#carouseldoc" data-slide-to="@b"></li>
+        }
+    </ol>
+    <a class="carousel-control-prev" href="#carouseldoc" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouseldoc" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--Games-->
+<div id="carouselgame" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <p class="display-4">Games </p>
+    </div>
+    <div class="carousel-inner">
+        @{ int p = 0;}
+        @foreach (var item in Model.ActivityAttributes)
+        {
+            if (item.ActivityID == 8 && !string.IsNullOrEmpty(item.Image))
+            {
+                if (p == 0)
+                {
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                                <p>@item.Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    p++;
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    p++;
+                }
+            }
+        }
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carouselgame" data-slide-to="0" class="active"></li>
+        @for (int b = 1; b < j; b++)
+        {
+            <li data-target="#carouselgame" data-slide-to="@b"></li>
+        }
+    </ol>
+    <a class="carousel-control-prev" href="#carouselgame" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselgame" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--Mall-->
+<div id="carouselmall" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <p class="display-4">Malls </p>
+    </div>
+    <div class="carousel-inner">
+        @{ int r = 0;}
+        @foreach (var item in Model.ActivityAttributes)
+        {
+            if (item.ActivityID == 9 && !string.IsNullOrEmpty(item.Image))
+            {
+                if (r == 0)
+                {
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                                <p>@item.Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    r++;
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    r++;
+                }
+            }
+        }
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carouselmall" data-slide-to="0" class="active"></li>
+        @for (int b = 1; b < j; b++)
+        {
+            <li data-target="#carouselmall" data-slide-to="@b"></li>
+        }
+    </ol>
+    <a class="carousel-control-prev" href="#carouselmall" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselmall" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--WAlk Roads-->
+<div id="carouselwalk" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <p class="display-4">Walk Roads </p>
+    </div>
+    <div class="carousel-inner">
+        @{ int s = 0;}
+        @foreach (var item in Model.ActivityAttributes)
+        {
+            if (item.ActivityID == 10 && !string.IsNullOrEmpty(item.Image))
+            {
+                if (s == 0)
+                {
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                                <p>@item.Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    s++;
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img src="~/theme/img/@item.Image" class="d-block w-100" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>@item.AttributeName</h5>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    s++;
+                }
+            }
+        }
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carouselwalk" data-slide-to="0" class="active"></li>
+        @for (int b = 1; b < j; b++)
+        {
+            <li data-target="#carouselwalk" data-slide-to="@b"></li>
+        }
+    </ol>
+    <a class="carousel-control-prev" href="#carouselwalk" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselwalk" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

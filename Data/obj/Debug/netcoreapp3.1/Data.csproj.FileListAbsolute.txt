@@ -1,0 +1,11 @@
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Data\obj\Debug\netcoreapp3.1\Data.pdb

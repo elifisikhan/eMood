@@ -1,0 +1,8 @@
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\obj\Debug\netcoreapp3.1\Entity.pdb

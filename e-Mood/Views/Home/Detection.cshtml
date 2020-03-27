@@ -1,0 +1,26 @@
+﻿<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Duygu Tespiti</h1>
+        <p class="lead">Şu an ki duygu durumunuzu en iyi tanımlayan seçeneği seçiniz! </p>
+    </div>
+
+    <ul class="list-group list-group-horizontal" bgcolor="#00FF00">
+        <li class="list-group-item" bgcolor="#00FF00">
+            <label>
+                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="mutlu" asp-route-inside="true" class="btn btn-success">Mutlu</a>
+                <span class="checkmark"></span>
+                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="üzgün" asp-route-inside="true" class="btn btn-success">Üzgün</a>
+                <span class="checkmark"></span>
+                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="Korkmuş" asp-route-inside="true" class="btn btn-success">Korkmuş</a>
+
+                <span class="checkmark"></span>
+                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="Bıkmış" asp-route-inside="true" class="btn btn-success">Bıkmış</a>
+
+                <span class="checkmark"></span>
+                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="Kızgın" asp-route-inside="false" class="btn btn-success">Kızgın</a>
+
+                <span class="checkmark"></span>
+            </label>
+        </li>
+    </ul>
+</div>
