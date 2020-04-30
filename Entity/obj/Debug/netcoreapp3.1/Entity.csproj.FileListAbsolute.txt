@@ -6,3 +6,12 @@ C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\obj\Debug\netcoreapp3.1\En
 C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
 C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\obj\Debug\netcoreapp3.1\Entity.dll
 C:\Users\isikh\Desktop\masaüstü\proje\e-Mood\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\-rs\Documents\GitHub\eMood\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\-rs\Documents\GitHub\eMood\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\-rs\Documents\GitHub\eMood\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\-rs\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\-rs\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\-rs\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\-rs\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\-rs\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\-rs\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.pdb

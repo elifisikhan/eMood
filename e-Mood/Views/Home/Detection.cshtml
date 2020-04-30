@@ -9,7 +9,14 @@
     <ul class="list-group list-group-horizontal" bgcolor="#00FF00">
 
         @{ paralleldots pd = new paralleldots("t4QbBcz58Iji4ClW9en0wsw5hl6dEm3FadLm79PsYpo");
+
+
+            //url 
             string facial_emotion = pd.facial_emotion_url("https://i4.hurimg.com/i/hurriyet/75/750x422/5d701fcf7af507298cf7be3c.jpg");
+
+            //image_path
+            //string path_to_image = @"C://Users/-rs//Desktop/r.jpg";
+            //string facial_emotion = pd.facial_emotion(path_to_image);
 
             string a = @"tag";
             string[] emotions = facial_emotion.Split(a);

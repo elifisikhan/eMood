@@ -292,3 +292,7 @@ C:\Users\-rs\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\staticwebasse
 C:\Users\-rs\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.dll
 C:\Users\-rs\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.pdb
 C:\Users\-rs\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.genruntimeconfig.cache
+C:\Users\-rs\Documents\GitHub\eMood\e-Mood\bin\Debug\netcoreapp3.1\ParallelDots.dll
+C:\Users\-rs\Documents\GitHub\eMood\e-Mood\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\-rs\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.csproj.CoreCompileInputs.cache
+C:\Users\-rs\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.MvcApplicationPartsAssemblyInfo.cache
