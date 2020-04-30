@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\isikh\\.nuget\\packages\\": {},
+    "C:\\Users\\-rs\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isikh\\Desktop\\masaüstü\\proje\\e-Mood\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\isikh\\Desktop\\masaüstü\\proje\\e-Mood\\Entity\\Entity.csproj",
-      "packagesPath": "C:\\Users\\isikh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\isikh\\Desktop\\masaüstü\\proje\\e-Mood\\Entity\\obj\\",
+      "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj",
+      "packagesPath": "C:\\Users\\-rs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\isikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\-rs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
