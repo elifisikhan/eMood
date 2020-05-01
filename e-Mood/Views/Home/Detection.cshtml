@@ -3,7 +3,6 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1 class="display-4">Duygu Tespiti</h1>
-        <p class="lead">Şu an ki duygu durumunuzu en iyi tanımlayan seçeneği seçiniz! </p>
     </div>
 
     <ul class="list-group list-group-horizontal" bgcolor="#00FF00">
@@ -11,36 +10,32 @@
         @{ paralleldots pd = new paralleldots("t4QbBcz58Iji4ClW9en0wsw5hl6dEm3FadLm79PsYpo");
 
 
-            //url 
+            //url
             string facial_emotion = pd.facial_emotion_url("https://i4.hurimg.com/i/hurriyet/75/750x422/5d701fcf7af507298cf7be3c.jpg");
 
             //image_path
-            //string path_to_image = @"C://Users/-rs//Desktop/r.jpg";
-            //string facial_emotion = pd.facial_emotion(path_to_image);
+            //string path_to_image = @"C:\Users\isikh\Documents\GitHub\eMood\e-Mood\wwwroot\theme\img\agla.jpg";
+            // string facial_emotion = pd.facial_emotion(path_to_image);
 
             string a = @"tag";
             string[] emotions = facial_emotion.Split(a);
             string s = @"""";
             string[] d = emotions[1].Split(s);
             string result = d[2];
-
+            if (result == "Disgust")
+                result = "Sad";
+            else if (result == "Surprise")
+                result = "Happy";
+            else if (result == "Fear")
+                result = "Sad";
+            else if (result == "Neutral")
+                result = "Happy";
 
         }
 
         <li class="list-group-item" bgcolor="#00FF00">
             <label>
-                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="mutlu" asp-route-inside="true" class="btn btn-success">Mutlu</a>
-                <span class="checkmark"></span>
-                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="üzgün" asp-route-inside="true" class="btn btn-success">Üzgün</a>
-                <span class="checkmark"></span>
-                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="Korkmuş" asp-route-inside="true" class="btn btn-success">Korkmuş</a>
-
-                <span class="checkmark"></span>
-                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="Bıkmış" asp-route-inside="true" class="btn btn-success">Bıkmış</a>
-
-                <span class="checkmark"></span>
-                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="Kızgın" asp-route-inside="false" class="btn btn-success">Kızgın</a>
-
+                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="@result" asp-route-inside="true" class="btn btn-success">@result</a>
                 <span class="checkmark"></span>
             </label>
         </li>

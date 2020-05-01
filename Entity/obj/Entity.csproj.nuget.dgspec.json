@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {}
+    "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
+    "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\-rs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\obj\\",
+        "projectPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\isikh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\-rs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\isikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
