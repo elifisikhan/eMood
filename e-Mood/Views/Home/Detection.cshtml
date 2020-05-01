@@ -10,9 +10,12 @@
         @{ paralleldots pd = new paralleldots("t4QbBcz58Iji4ClW9en0wsw5hl6dEm3FadLm79PsYpo");
 
 
-            //url
-            string facial_emotion = pd.facial_emotion_url("https://i4.hurimg.com/i/hurriyet/75/750x422/5d701fcf7af507298cf7be3c.jpg");
-
+            //happy
+            //string facial_emotion = pd.facial_emotion_url("https://i4.hurimg.com/i/hurriyet/75/750x422/5d701fcf7af507298cf7be3c.jpg");
+            //sad
+            //string facial_emotion = pd.facial_emotion_url("https://image.shutterstock.com/image-photo/portrait-cute-baby-closeup-260nw-465895598.jpg");
+            string facial_emotion = pd.facial_emotion_url("https://cdn.mos.cms.futurecdn.net/YdGPmBa6UZj8pxM95T2ADA-320-80.jpg");
+            
             //image_path
             //string path_to_image = @"C:\Users\isikh\Documents\GitHub\eMood\e-Mood\wwwroot\theme\img\agla.jpg";
             // string facial_emotion = pd.facial_emotion(path_to_image);
@@ -22,20 +25,21 @@
             string s = @"""";
             string[] d = emotions[1].Split(s);
             string result = d[2];
+            string result2 = d[2];
             if (result == "Disgust")
-                result = "Sad";
+                result2 = "Sad";
             else if (result == "Surprise")
-                result = "Happy";
+                result2 = "Happy";
             else if (result == "Fear")
-                result = "Sad";
+                result2 = "Sad";
             else if (result == "Neutral")
-                result = "Happy";
+                result2 = "Happy";
 
         }
 
         <li class="list-group-item" bgcolor="#00FF00">
             <label>
-                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="@result" asp-route-inside="true" class="btn btn-success">@result</a>
+                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="@result2" asp-route-inside="true" class="btn btn-success">@result</a>
                 <span class="checkmark"></span>
             </label>
         </li>
