@@ -2115,7 +2115,7 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
+      "sha512": "NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
@@ -2338,7 +2338,7 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
+      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
@@ -4892,7 +4892,7 @@
       ]
     },
     "System.Xml.XmlSerializer/4.3.0": {
-      "sha512": "VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
+      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
@@ -4975,23 +4975,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\isikh\\.nuget\\packages\\": {},
+    "C:\\Users\\-rs\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\isikh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Data\\obj\\",
+      "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\-rs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\isikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\-rs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5004,8 +5004,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj"
+            "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj"
             }
           }
         }

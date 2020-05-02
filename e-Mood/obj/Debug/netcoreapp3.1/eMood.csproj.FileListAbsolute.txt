@@ -448,3 +448,4 @@ C:\Users\isikh\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.dll
 C:\Users\isikh\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.pdb
 C:\Users\isikh\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.genruntimeconfig.cache
 C:\Users\isikh\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CollectiveMenu\Default.cshtml.g.cs
+C:\Users\-rs\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CollectiveMenu\Default.cshtml.g.cs
