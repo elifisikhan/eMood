@@ -4085,11 +4085,12 @@
       ]
     },
     "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "/p8IQT2brFMDa7BHMH71LV+w5Tb3OxoLHxhn6+MGqN5xeqhM2HRHmj+7xQGJnaRn73d7ZTvp6yRCFMvolws4wA==",
+      "sha512": "X7IdhILzr4ROXd8mI1BUCQMSHSQwelUlBjF1JyTKCjXaOGn2fB4EKBxQbCK2VjO3WaWIdlXZL3W6TiIVnrhX4g==",
       "type": "package",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -4111,11 +4112,12 @@
       ]
     },
     "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "JGc0pAWRE8lB4Ucygk2pYSKbUPLlAIq6Bczf5/WF2D/VKJEPtYlVUMxk8fbl1zRfTWzSHi+VcFZlaPlWiNxeKg==",
+      "sha512": "ytoewC6wGorL7KoCAvRfsgoJPJbNq+64k2SqW6JcOAebWsFUvCCYgfzQMrnpvPiEl4OrblUlhF2ji+Q1+SVLrQ==",
       "type": "package",
       "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -4459,11 +4461,12 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
+      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4644,11 +4647,12 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
+      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -8261,23 +8265,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\-rs\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ayses\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj",
+      "projectUniqueName": "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj",
       "projectName": "eMood",
-      "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj",
-      "packagesPath": "C:\\Users\\-rs\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\e-Mood\\obj\\",
+      "projectPath": "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj",
+      "packagesPath": "C:\\Users\\ayses\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\e-Mood\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\-rs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ayses\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8290,11 +8290,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj"
+            "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\Data\\Data.csproj"
             },
-            "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj"
+            "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj"
             }
           }
         }

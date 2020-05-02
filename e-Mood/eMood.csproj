@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\CameraPhoto\**" />
+    <Content Remove="wwwroot\CameraPhoto\**" />
+    <EmbeddedResource Remove="wwwroot\CameraPhoto\**" />
+    <None Remove="wwwroot\CameraPhoto\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <dotnetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
     <ProjectReference Include="..\Data\Data.csproj" />
     <ProjectReference Include="..\Entity\Entity.csproj" />

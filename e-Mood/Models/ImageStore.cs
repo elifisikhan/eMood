@@ -5,14 +5,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DemoWebCam.Models
+namespace e_Mood.Models
 {
     [Table("ImageStore")]
     public class ImageStore
     {
         [Key]
         public int ImageId { get; set; }
-        public string ImageBase64String { get; set; }   
+        public string ImageBase64String { get; set; }
         public DateTime? CreateDate { get; set; }
     }
 }

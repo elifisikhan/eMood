@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DemoWebCam.Models
+namespace e_Mood.Models
 {
     public class CameraModel
     {

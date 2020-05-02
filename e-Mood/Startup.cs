@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using e_Mood.EntityStore;
 
 namespace e_Mood
 {
@@ -32,6 +33,8 @@ namespace e_Mood
             services.AddTransient<Iuow, EfUnitOfWork>();
             services.AddMvc();
             services.AddControllersWithViews();
+            services.AddDbContext<DatabaseContext>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -24,3 +24,12 @@ C:\Users\isikh\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.Asse
 C:\Users\isikh\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
 C:\Users\isikh\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.dll
 C:\Users\isikh\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\ayses\Documents\GitHub\eMood\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\ayses\Documents\GitHub\eMood\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\ayses\Documents\GitHub\eMood\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\ayses\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\ayses\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\ayses\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\ayses\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\ayses\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\ayses\Documents\GitHub\eMood\Entity\obj\Debug\netcoreapp3.1\Entity.pdb

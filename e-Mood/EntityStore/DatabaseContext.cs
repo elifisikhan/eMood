@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DemoWebCam.Models;
+using e_Mood.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DemoWebCam.EntityStore
+namespace e_Mood.EntityStore
 {
     public class DatabaseContext : DbContext
     {

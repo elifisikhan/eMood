@@ -2115,11 +2115,12 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
+      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2300,11 +2301,12 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
+      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4975,23 +4977,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\-rs\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ayses\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\-rs\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\obj\\",
+      "projectPath": "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\ayses\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\Data\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\-rs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ayses\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5004,8 +5002,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj"
+            "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\ayses\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj"
             }
           }
         }

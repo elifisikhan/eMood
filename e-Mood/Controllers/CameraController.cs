@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using DemoWebCam.EntityStore;
-using DemoWebCam.Models;
+using e_Mood.EntityStore;
+using e_Mood.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DemoWebCam.Controllers
+namespace e_Mood.Controllers
 {
     public class CameraController : Controller
     {

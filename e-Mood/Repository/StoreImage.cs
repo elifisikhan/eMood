@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DemoWebCam.Repository
+namespace e_Mood.Repository
 {
     public class StoreImage
     {

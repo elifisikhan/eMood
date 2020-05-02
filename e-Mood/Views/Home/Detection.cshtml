@@ -1,9 +1,32 @@
-﻿@using ParallelDots
+﻿<style type="text/css">
 
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            @*<h1 class="display-4">Duygu Tespiti</h1>*@
-        </div>
+    body {
+        font-family: Helvetica, sans-serif;
+    }
+
+    h2, h3 {
+        margin-top: 0;
+    }
+
+    form {
+        margin-top: 15px;
+    }
+
+        form > input {
+            margin-right: 15px;
+        }
+
+
+    #buttonhide {
+        background: transparent;
+        border: none !important;
+        font-size: 0;
+    }
+</style>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        @*<h1 class="display-4">Duygu Tespiti</h1>*@
+
 
         <div class="col-md-2"></div>
         <div class="col-md-4">
@@ -35,72 +58,73 @@
         <script src="~/webcamjs/webcam.js"></script>
         <!-- Configure a few settings and attach camera -->
         <script language="JavaScript">
-        Webcam.set({
-            width: 320,
-            height: 240,
-            image_format: 'jpeg',
-            jpeg_quality: 90
-        });
-        Webcam.attach('#my_camera');
+            Webcam.set({
+                width: 320,
+                height: 240,
+                image_format: 'jpeg',
+                jpeg_quality: 90
+            });
+            Webcam.attach('#my_camera');
         </script>
 
         <!-- Code to handle taking the snapshot and displaying it locally -->
         <script language="JavaScript">
-        function take_snapshot() {
-            // take snapshot and get image data
-            Webcam.snap(function (data_uri) {
-                // display results in page
-                document.getElementById('results').innerHTML =
-                    '<img src="' +
-                    data_uri +
-                    '"/>';
+            function take_snapshot() {
+                // take snapshot and get image data
+                Webcam.snap(function (data_uri) {
+                    // display results in page
+                    document.getElementById('results').innerHTML =
+                        '<img src="' +
+                        data_uri +
+                        '"/>';
 
-                Webcam.upload(data_uri,
-                    '/Camera/Capture',
-                    function (code, text) {
-                        alert('Photo Captured');
-                    });
-            });
-        }
-        </script>
-
-        <ul class="list-group list-group-horizontal" bgcolor="#00FF00">
-
-            @{ paralleldots pd = new paralleldots("t4QbBcz58Iji4ClW9en0wsw5hl6dEm3FadLm79PsYpo");
-
-
-                //happy
-                //string facial_emotion = pd.facial_emotion_url("https://i4.hurimg.com/i/hurriyet/75/750x422/5d701fcf7af507298cf7be3c.jpg");
-                //sad
-                //string facial_emotion = pd.facial_emotion_url("https://image.shutterstock.com/image-photo/portrait-cute-baby-closeup-260nw-465895598.jpg");
-                string facial_emotion = pd.facial_emotion_url("https://cdn.mos.cms.futurecdn.net/YdGPmBa6UZj8pxM95T2ADA-320-80.jpg");
-
-                //image_path
-                //string path_to_image = @"C:\Users\isikh\Documents\GitHub\eMood\e-Mood\wwwroot\theme\img\agla.jpg";
-                // string facial_emotion = pd.facial_emotion(path_to_image);
-
-                string a = @"tag";
-                string[] emotions = facial_emotion.Split(a);
-                string s = @"""";
-                string[] d = emotions[1].Split(s);
-                string result = d[2];
-                string result2 = d[2];
-                if (result == "Disgust")
-                    result2 = "Sad";
-                else if (result == "Surprise")
-                    result2 = "Happy";
-                else if (result == "Fear")
-                    result2 = "Sad";
-                else if (result == "Neutral")
-                    result2 = "Happy";
-
+                    Webcam.upload(data_uri,
+                        '/Camera/Capture',
+                        function (code, text) {
+                            alert('Photo Captured');
+                        });
+                });
             }
-
-            <li class="list-group-item" bgcolor="#00FF00">
-                <label>
-                    <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="@result2" asp-route-inside="true" class="btn btn-success">@result</a>
-                    <span class="checkmark"></span>
-                </label>
-            </li>
-        </ul>
+        </script>
     </div>
+
+    <ul class="list-group list-group-horizontal" bgcolor="#00FF00">
+
+        @{ paralleldots pd = new paralleldots("t4QbBcz58Iji4ClW9en0wsw5hl6dEm3FadLm79PsYpo");
+
+
+            //happy
+            //string facial_emotion = pd.facial_emotion_url("https://i4.hurimg.com/i/hurriyet/75/750x422/5d701fcf7af507298cf7be3c.jpg");
+            //sad
+            //string facial_emotion = pd.facial_emotion_url("https://image.shutterstock.com/image-photo/portrait-cute-baby-closeup-260nw-465895598.jpg");
+            string facial_emotion = pd.facial_emotion_url("https://cdn.mos.cms.futurecdn.net/YdGPmBa6UZj8pxM95T2ADA-320-80.jpg");
+
+            //image_path
+            //string path_to_image = @"C:\Users\isikh\Documents\GitHub\eMood\e-Mood\wwwroot\theme\img\agla.jpg";
+            // string facial_emotion = pd.facial_emotion(path_to_image);
+
+            string a = @"tag";
+            string[] emotions = facial_emotion.Split(a);
+            string s = @"""";
+            string[] d = emotions[1].Split(s);
+            string result = d[2];
+            string result2 = d[2];
+            if (result == "Disgust")
+                result2 = "Sad";
+            else if (result == "Surprise")
+                result2 = "Happy";
+            else if (result == "Fear")
+                result2 = "Sad";
+            else if (result == "Neutral")
+                result2 = "Happy";
+
+        }
+
+        <li class="list-group-item" bgcolor="#00FF00">
+            <label>
+                <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="@result2" asp-route-inside="true" class="btn btn-success">@result</a>
+                <span class="checkmark"></span>
+            </label>
+        </li>
+    </ul>
+</div>
