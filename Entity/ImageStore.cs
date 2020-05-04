@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace e_Mood.Models
+namespace Entity
 {
     [Table("ImageStore")]
     public class ImageStore
@@ -13,6 +12,7 @@ namespace e_Mood.Models
         [Key]
         public int ImageId { get; set; }
         public string ImageBase64String { get; set; }
+        public string ImagePathString { get; set; }
         public DateTime? CreateDate { get; set; }
     }
 }

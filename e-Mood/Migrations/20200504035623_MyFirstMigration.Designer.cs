@@ -4,14 +4,16 @@ using Data.Concrete.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace e_Mood.Migrations
 {
     [DbContext(typeof(eMoodContext))]
-    partial class eMoodContextModelSnapshot : ModelSnapshot
+    [Migration("20200504035623_MyFirstMigration")]
+    partial class MyFirstMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -112,9 +114,6 @@ namespace e_Mood.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImageBase64String")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImagePathString")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ImageId");

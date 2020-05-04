@@ -14,6 +14,7 @@ namespace Data.Concrete.EntityFramework
         public Microsoft.EntityFrameworkCore.DbSet<Emotion> Emotions { get; set; }
         public Microsoft.EntityFrameworkCore.DbSet<ActivityEmotion> ActivityEmotions { get; set; }
         public Microsoft.EntityFrameworkCore.DbSet<ActivityAttribute> ActivityAttributes { get; set; }
+        public DbSet<ImageStore> ImageStore { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -4,14 +4,16 @@ using Data.Concrete.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace e_Mood.Migrations
 {
     [DbContext(typeof(eMoodContext))]
-    partial class eMoodContextModelSnapshot : ModelSnapshot
+    [Migration("20200504042022_MyFirstMigration2")]
+    partial class MyFirstMigration2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

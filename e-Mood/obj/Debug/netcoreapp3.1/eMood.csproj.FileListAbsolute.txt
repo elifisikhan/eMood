@@ -601,3 +601,4 @@ C:\Users\ayses\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\staticwebas
 C:\Users\ayses\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.dll
 C:\Users\ayses\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.pdb
 C:\Users\ayses\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\eMood.genruntimeconfig.cache
+C:\Users\isikh\Documents\GitHub\eMood\e-Mood\obj\Debug\netcoreapp3.1\Razor\Views\ParallelDots\Index.cshtml.g.cs
