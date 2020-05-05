@@ -1,11 +1,12 @@
 ﻿<div class="jumbotron jumbotron-fluid" style="min-height:455px; padding-top: 20px; padding-bottom: 20px; ">
     <div class="container text-center">
-        <p style="font-style: oblique;"><h4 class="display-4">Duygu Tespiti</h4></p>
+        <p style="font-style: oblique;"><h3>Duygu Durumunuzu Doğru Tespit Edebilmemiz İçin Lütfen Kameraya Yüzünüzü Gösteriniz</h3></p>
+        <p> Kamera Erişimine İzin Vermeyi Unutmayın!</p>
         <div class="col-md-4" style="padding-top: 20px;">
             <div class="panel panel-default">
                 <div class="panel-heading"></div>
                 <div class="panel-body" style="width:100px;height:40px;">
-                    <div id="my_camera" class="embed-responsive embed-responsive-21by9" style="width: 1000px; height: 600px; left:100px;"></div>
+                    <div id="my_camera" class="embed-responsive embed-responsive-21by9" style="width: 1000px; height: 300px; left:100px;"></div>
                 </div>
             </div>
         </div>
@@ -22,7 +23,7 @@
             <div class="col-sm">
                 <label>
                     <br><br><br><br><br><br>
-                    <a asp-action="Index" asp-controller="ParallelDots" class="btn btn-success" style="background-color:#CB47A7;">Yönlendir</a>
+                    <a asp-action="Index" asp-controller="ParallelDots" class="btn btn-success" style="background-color:#CB47A7;">Devam Et</a>
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -51,7 +52,7 @@
     <script language="JavaScript">
         Webcam.set({
             width: 920,
-            height: 400,
+            height: 300,
             image_format: 'jpeg',
             jpeg_quality: 90
         });

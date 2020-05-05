@@ -4,46 +4,67 @@
     string path_to_image = @"C://Users/isikh/Documents/GitHub/eMood/e-Mood/wwwroot/CameraPhotos/" + path;
     string facial_emotion = pd.facial_emotion(path_to_image);
     string a = @"tag";
-    string[] emotions = facial_emotion.Split(a);
-    string s = @"""";
-    string[] d = emotions[1].Split(s);
-    string result = d[2];
-    string result2 = d[2];
+    try
+    {
+        string[] emotions = facial_emotion.Split(a);
+        string s = @"""";
+        string[] d = emotions[1].Split(s);
+        string result = d[2];
+        string result2 = d[2];
 
-    if (result == "Happy") result = "Mutlu";
-    else if (result == "Sad") result = "Üzgün";
-    else if (result == "Fear") result = "Korkmuş";
-    else if (result == "Neutral") result = "Nötr";
-    else if (result == "Surprise") result = "Şaşırmış";
-    else if (result == "Angry") result = "Kızgın";
-    else if (result == "Disgust") result = "Bıkmış";
+        if (result == "Happy") result = "Mutlu";
+        else if (result == "Sad") result = "Üzgün";
+        else if (result == "Fear") result = "Korkmuş";
+        else if (result == "Neutral") result = "Nötr";
+        else if (result == "Surprise") result = "Şaşırmış";
+        else if (result == "Angry") result = "Kızgın";
+        else if (result == "Disgust") result = "Bıkmış";
 
+        if (result2 == "Disgust")
+            result2 = "Sad";
+        else if (result2 == "Surprise")
+            result2 = "Angry";
+        else if (result2 == "Fear")
+            result2 = "Sad";
+        else if (result2 == "Neutral")
+            result2 = "Happy";
 
-    if (result2 == "Disgust")
-        result2 = "Sad";
-    else if (result2 == "Surprise")
-        result2 = "Angry";
-    else if (result2 == "Fear")
-        result2 = "Sad";
-    else if (result2 == "Neutral")
-        result2 = "Happy";
-}
-
-
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="display-4">Duygu Tespiti</h1>
-        <h3>Şu an @result gibisiniz! </h3>
-        <div class="col-md-2"></div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Duygu Tespiti</h1><br><br>
+            <h3>Tespitimize göre @result gözüküyorsunuz! </h3>
+            <div class="col-md-2"></div>
+            <ul class="list-group list-group-horizontal" style="background-color:#DBB1CF">
+                <li class="list-group-item" bgcolor="#00FF00">
+                    <label>
+                        Sizin için seçtiğimiz önerileri görüntülemek için
+                    </label> 
+                        <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="@result2" asp-route-inside="true" class="btn btn-outline-light">Tıklayınız...</a>
+                        <span class="checkmark"></span>
+                    
+                </li>
+            </ul>
+        </div><br><br><br><br><br>
+        <div class="container">
+            <p>Yanıldığımızı düşünüyorsan bize bir şans daha ver ve &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a asp-action="Detection" asp-controller="Home" asp-route-inside="true" class="btn btn-outline-success"> tekrar dene!</a></p>
+            <span class="checkmark"></span>
+        </div>
+        </div>
+        }
+        catch
+        {
+        <div class="alert alert-primary" role="alert">
+            <h2>Bir şeyler yanlış gitti!</h2>
+            <h4>Lütfen Yüzünüz Net Gözükecek Şekilde Tekrar Deneyiniz...</h4>
+        </div>
         <ul class="list-group list-group-horizontal" bgcolor="#00FF00">
-            <li class="list-group-item" bgcolor="#00FF00">
+            <li class="list-group-item" bgcolor="#00FF00" style="left:405px; width:200px;">
                 <label>
-                    <p>Sizin için seçtiğimiz önerileri görüntülemek için </p>
-                    <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="@result2" asp-route-inside="true" >Tıklayınız...</a>
+                    <a asp-action="Detection" asp-controller="Home" asp-route-inside="true" class="btn btn-outline-light">Sayfaya Geri Dön</a>
                     <span class="checkmark"></span>
                 </label>
             </li>
-
         </ul>
-    </div>
-</div>
+        }
+        }
+

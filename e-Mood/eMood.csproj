@@ -28,15 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="wwwroot\theme\img\amelie.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Update="wwwroot\theme\img\gizli.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="wwwroot\CameraPhotos\" />
   </ItemGroup>
 

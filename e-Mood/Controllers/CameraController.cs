@@ -55,8 +55,6 @@ namespace e_Mood.Controllers
                             // Concating filename + fileExtension (unique filename)
                             var newFileName = string.Concat(myUniqueFileName, fileExtension);
                             var filepathShort = string.Concat(myUniqueFileName, fileExtension);
-
-
                             //  Generating Path to store photo 
                             var filepath = Path.Combine(_environment.WebRootPath, "CameraPhotos") + $@"\{newFileName}";
                             var filepath1 = newFileName;
@@ -67,7 +65,6 @@ namespace e_Mood.Controllers
                                 StoreInFolder(file, filepath);
                                 
                             }
-
                             var imageBytes = System.IO.File.ReadAllBytes(filepath);
                             if (imageBytes != null)
                             {
