@@ -1,95 +1,78 @@
-﻿<style type="text/css">
-
-    body {
-        font-family: Helvetica, sans-serif;
-    }
-
-    h2, h3 {
-        margin-top: 0;
-    }
-
-    form {
-        margin-top: 15px;
-    }
-
-        form > input {
-            margin-right: 15px;
-        }
-
-
-    #buttonhide {
-        background: transparent;
-        border: none !important;
-        font-size: 0;
-    }
-</style>
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
+﻿<div class="jumbotron jumbotron-fluid" style="min-height:455px; padding-top: 20px; padding-bottom: 20px; ">
+    <div class="container text-center">
+        <p style="font-style: oblique;"><h4 class="display-4">Duygu Tespiti</h4></p>
+        <div class="col-md-4" style="padding-top: 20px;">
             <div class="panel panel-default">
                 <div class="panel-heading"></div>
-                <div class="panel-body">
-                    <div id="my_camera"></div>
-                    <!-- A button for taking snaps -->
-                    <form>
-                        <input type="button" class="btn btn-success" value="Take Snapshot" onClick="take_snapshot()">
-                    </form>
+                <div class="panel-body" style="width:100px;height:40px;">
+                    <div id="my_camera" class="embed-responsive embed-responsive-21by9" style="width: 1000px; height: 600px; left:100px;"></div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"></div>
-                <div class="panel-body">
-                    <div id="results"></div>
-                </div>
-                <br />
-                <br />
-            </div>
-        </div>
-
-        <div class="col-md-2">    </div>
-        <!-- First, include the Webcam.js JavaScript Library -->
-        <script src="~/webcamjs/webcam.js"></script>
-        <!-- Configure a few settings and attach camera -->
-        <script language="JavaScript">
-            Webcam.set({
-                width: 320,
-                height: 240,
-                image_format: 'jpeg',
-                jpeg_quality: 90
-            });
-            Webcam.attach('#my_camera');
-        </script>
-
-        <!-- Code to handle taking the snapshot and displaying it locally -->
-        <script language="JavaScript">
-            function take_snapshot() {
-                // take snapshot and get image data
-                Webcam.snap(function (data_uri) {
-                    // display results in page
-                    document.getElementById('results').innerHTML =
-                        '<img src="' +
-                        data_uri +
-                        '"/>';
-
-                    Webcam.upload(data_uri,
-                        '/Camera/Capture',
-                        function (code, text) {
-                            alert('Photo Captured');
-                        });
-                });
-            }
-        </script>
     </div>
+</div>
+<div class="container text-center" style="padding-top:35px;">
+    <form>
+        <input type="button" class="btn btn-success" value="Fotoğraf Çek" onClick="take_snapshot()" style="background-color:#CB47A7;">
+    </form>
+    <br><br><br>
+    <!-- <div style="max-width:100px;">-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <label>
+                    <br><br><br><br><br><br>
+                    <a asp-action="Index" asp-controller="ParallelDots" class="btn btn-success" style="background-color:#CB47A7;">Yönlendir</a>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="col-sm">
+                <div class="panel panel-default">
+                    <div class="panel-heading"></div>
+                    <div class="panel-body">
+                        <div id="results"></div>
+                    </div>
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <ul class="list-group list-group-horizontal" bgcolor="#00FF00">
-        <li class="list-group-item" bgcolor="#00FF00">
-            <label>
-                <a asp-action="Index" asp-controller="ParallelDots" class="btn btn-success">Yönlendir</a>
-                <span class="checkmark"></span>
-            </label>
-        </li>
-    </ul>
+<!--</div>-->
+<!-- A button for taking snaps -->
+
+<div>
+    <div class="col-md-2">    </div>
+    <!-- First, include the Webcam.js JavaScript Library -->
+    <script src="~/webcamjs/webcam.js"></script>
+    <!-- Configure a few settings and attach camera -->
+    <script language="JavaScript">
+        Webcam.set({
+            width: 920,
+            height: 400,
+            image_format: 'jpeg',
+            jpeg_quality: 90
+        });
+        Webcam.attach('#my_camera');
+    </script>
+
+    <!-- Code to handle taking the snapshot and displaying it locally -->
+    <script language="JavaScript">
+        function take_snapshot() {
+            // take snapshot and get image data
+            Webcam.snap(function (data_uri) {
+                // display results in page
+                document.getElementById('results').innerHTML =
+                    '<img style="left:500px;max-width:500px; height:300px;"src="' +
+                    data_uri +
+                    '"/>';
+                Webcam.upload(data_uri,
+                    '/Camera/Capture');
+            });
+        }
+    </script>
+</div>
+
 </div>

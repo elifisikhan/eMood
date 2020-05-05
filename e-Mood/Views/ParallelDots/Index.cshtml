@@ -1,66 +1,49 @@
 ﻿@model string
+@{ paralleldots pd = new paralleldots("t4QbBcz58Iji4ClW9en0wsw5hl6dEm3FadLm79PsYpo");
+    string path = Model;
+    string path_to_image = @"C://Users/isikh/Documents/GitHub/eMood/e-Mood/wwwroot/CameraPhotos/" + path;
+    string facial_emotion = pd.facial_emotion(path_to_image);
+    string a = @"tag";
+    string[] emotions = facial_emotion.Split(a);
+    string s = @"""";
+    string[] d = emotions[1].Split(s);
+    string result = d[2];
+    string result2 = d[2];
 
-<style type="text/css">
-
-    body {
-        font-family: Helvetica, sans-serif;
-    }
-
-    h2, h3 {
-        margin-top: 0;
-    }
-
-    form {
-        margin-top: 15px;
-    }
-
-        form > input {
-            margin-right: 15px;
-        }
+    if (result == "Happy") result = "Mutlu";
+    else if (result == "Sad") result = "Üzgün";
+    else if (result == "Fear") result = "Korkmuş";
+    else if (result == "Neutral") result = "Nötr";
+    else if (result == "Surprise") result = "Şaşırmış";
+    else if (result == "Angry") result = "Kızgın";
+    else if (result == "Disgust") result = "Bıkmış";
 
 
-    #buttonhide {
-        background: transparent;
-        border: none !important;
-        font-size: 0;
-    }
-</style>
+    if (result2 == "Disgust")
+        result2 = "Sad";
+    else if (result2 == "Surprise")
+        result2 = "Angry";
+    else if (result2 == "Fear")
+        result2 = "Sad";
+    else if (result2 == "Neutral")
+        result2 = "Happy";
+}
+
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h4 class="display-4">Duygu Tespiti</h4>
+        <h1 class="display-4">Duygu Tespiti</h1>
+        <h3>Şu an @result gibisiniz! </h3>
         <div class="col-md-2"></div>
         <ul class="list-group list-group-horizontal" bgcolor="#00FF00">
-
-            @{  paralleldots pd = new paralleldots("t4QbBcz58Iji4ClW9en0wsw5hl6dEm3FadLm79PsYpo");
-                string path = Model;
-                string path_to_image = @"C://Users/isikh/Documents/GitHub/eMood/e-Mood/wwwroot/CameraPhotos/"+path;
-                string facial_emotion = pd.facial_emotion(path_to_image);
-
-                string a = @"tag";
-                string[] emotions = facial_emotion.Split(a);
-                string s = @"""";
-                string[] d = emotions[1].Split(s);
-                string result = d[2];
-                string result2 = d[2];
-                if (result == "Disgust")
-                    result2 = "Sad";
-                else if (result == "Surprise")
-                    result2 = "Happy";
-                else if (result == "Fear")
-                    result2 = "Sad";
-                else if (result == "Neutral")
-                    result2 = "Happy";
-            }
-
-
             <li class="list-group-item" bgcolor="#00FF00">
                 <label>
-                    <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="@result2" asp-route-inside="true" class="btn btn-success">@result</a>
+                    <p>Sizin için seçtiğimiz önerileri görüntülemek için </p>
+                    <a asp-action="List" asp-controller="Activity" asp-route-kind_of_emotion="@result2" asp-route-inside="true" >Tıklayınız...</a>
                     <span class="checkmark"></span>
                 </label>
             </li>
-            
+
         </ul>
     </div>
 </div>
