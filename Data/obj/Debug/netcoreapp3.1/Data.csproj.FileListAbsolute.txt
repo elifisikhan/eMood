@@ -27,7 +27,6 @@ C:\Users\isikh\Documents\GitHub\eMood\Data\bin\Debug\netcoreapp3.1\Data.pdb
 C:\Users\isikh\Documents\GitHub\eMood\Data\bin\Debug\netcoreapp3.1\Entity.dll
 C:\Users\isikh\Documents\GitHub\eMood\Data\bin\Debug\netcoreapp3.1\Entity.pdb
 C:\Users\isikh\Documents\GitHub\eMood\Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
-C:\Users\isikh\Documents\GitHub\eMood\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
 C:\Users\isikh\Documents\GitHub\eMood\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
 C:\Users\isikh\Documents\GitHub\eMood\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
 C:\Users\isikh\Documents\GitHub\eMood\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete

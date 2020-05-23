@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj": {}
+    "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj": {}
   },
   "projects": {
-    "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj": {
+    "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\-rs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\obj\\",
+        "projectPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\isikh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\-rs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\isikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj"
+              "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj"
               }
             }
           }
@@ -48,6 +48,10 @@
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -73,20 +77,20 @@
         }
       }
     },
-    "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj": {
+    "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj",
+        "projectUniqueName": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj",
         "projectName": "eMood",
-        "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj",
-        "packagesPath": "C:\\Users\\-rs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\e-Mood\\obj\\",
+        "projectPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\e-Mood\\eMood.csproj",
+        "packagesPath": "C:\\Users\\isikh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\e-Mood\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\-rs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\isikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,11 +103,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Data\\Data.csproj"
+              "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Data\\Data.csproj"
               },
-              "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj"
+              "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj"
               }
             }
           }
@@ -154,20 +158,20 @@
         }
       }
     },
-    "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
+    "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\-rs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\-rs\\Documents\\GitHub\\eMood\\Entity\\obj\\",
+        "projectPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\isikh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isikh\\Documents\\GitHub\\eMood\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\-rs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\isikh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
