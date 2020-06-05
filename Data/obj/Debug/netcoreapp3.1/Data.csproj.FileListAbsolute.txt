@@ -44,3 +44,4 @@ C:\Users\ayses\Documents\GitHub\eMood\Data\obj\Debug\netcoreapp3.1\Data.Assembly
 C:\Users\ayses\Documents\GitHub\eMood\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
 C:\Users\ayses\Documents\GitHub\eMood\Data\obj\Debug\netcoreapp3.1\Data.dll
 C:\Users\ayses\Documents\GitHub\eMood\Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Users\isikh\Documents\GitHub\eMood\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
